@@ -1,0 +1,83 @@
+body {
+    font-family: 'Righteous',
+        cursive;
+    font-family: 'Roboto',
+        sans-serif;
+    background-color: #E5E5E5;
+}
+
+nav {
+    background-color: #CF2B2B;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.brand_slogan {
+    margin-left: 21px;
+}
+
+.brand_slogan h1 {
+    font-size: 44px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: Righteous;
+    margin-bottom: 5px;
+}
+
+.brand_slogan span {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+main {
+    margin-top: 123px;
+    margin-left: 19px;
+}
+
+main p {
+    font-size: 26px;
+    color: #333333;
+    font-weight: 400;
+    font-family: Righteous;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 92px;
+    display: none;
+}
+
+.order_button p {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+.order_button {
+    background-color: #CBCBCB;
+    height: 61px;
+    width: 88%;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
