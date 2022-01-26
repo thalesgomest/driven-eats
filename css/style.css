@@ -7,7 +7,7 @@ body {
 }
 
 /* Top bar fixed */
-nav {
+header {
     background-color: #CF2B2B;
     height: 92px;
     display: flex;
@@ -39,7 +39,7 @@ nav {
     font-family: Roboto;
 }
 
-/* Escolha prato, bebida e sobremesa */
+/* Choices dishes, drinks and desserts */
 main {
     margin-top: 123px;
     margin-left: 19px;
@@ -64,6 +64,7 @@ main p {
     width: 172px;
     height: 216px;
     border-radius: 9px;
+    border: 5px solid #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     margin-right: 16px;
     display: flex;
@@ -81,7 +82,6 @@ main p {
     margin-left: 14px;
     margin-bottom: 13px;
 }
-
 
 .orders__box_order__order__txt {
     width: 144px;
@@ -108,11 +108,18 @@ main p {
 
 .order_price {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    /* flex-direction: column; */
+    justify-content: space-between;
 }
 
-.orders__box_order__order__price {
+.order_price ion-icon {
+    color: #32B72F;
+    margin-right: 12.78px;
+    display: none;
+    font-size: 15.44px;
+}
+
+.order_price p {
     font-size: 16px;
     font-weight: 400;
     font-family: Roboto;
