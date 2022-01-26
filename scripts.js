@@ -519,7 +519,7 @@ function Select_paçoca() {
 function FinishOrder() {
     let message;
 
-    message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+dishe+"\n- Bebida:" + " "+drink+"\n- Sobremesa:" + " "+dessert+ "\nTotal:" + " " + "R$" +" " + parseFloat(disheprice+disheprice+dessertprice).toFixed(2)
+    message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+dishe+"\n- Bebida:" + " "+drink+"\n- Sobremesa:" + " "+dessert+ "\nTotal:" + " " + "R$" +" " + parseFloat(disheprice+drinkprice+dessertprice).toFixed(2)
     
     window.open("https://wa.me/5535999160995?text="+encodeURI(message));
     
