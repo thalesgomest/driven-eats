@@ -7,6 +7,8 @@ let disheprice;
 let drinkprice;
 let dessertprice;
 
+// * Function change for Finish Button
+
 function OrderFinished() {
     if ((dishe != 0)&&(drink != 0)&&(dessert != 0)) {
         document.getElementById("order_button").style.display = "none";
@@ -60,7 +62,15 @@ function Select_lasanha_bolonhesa() {
     document.getElementById("box_bife_com_fritas").style.borderColor = "#FFFFFF";
     document.getElementById("check_bife_com_fritas").style.display = "none";
 
+    // todo Dishe chosen
     dishe = "Lasanha Bolonhesa";
+
+    // todo Dish price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_lasanha_bolonhesa").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    disheprice = floatprice;
 
     OrderFinished();
 }
@@ -79,7 +89,15 @@ function Select_parmegiana_carne() {
     document.getElementById("box_bife_com_fritas").style.borderColor = "#FFFFFF";
     document.getElementById("check_bife_com_fritas").style.display = "none";
 
+    // todo Dishe chosen
     dishe = "Parmegiana de Carne";
+
+    // todo Dish price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_parmegiana_carne").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    disheprice = floatprice;
 
     OrderFinished();    
 }
@@ -98,7 +116,15 @@ function Select_parmegiana_frango() {
     document.getElementById("box_bife_com_fritas").style.borderColor = "#FFFFFF";
     document.getElementById("check_bife_com_fritas").style.display = "none";
 
+    // todo Dishe chosen
     dishe = "Parmegiana de Frango";
+
+    // todo Dish price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_parmegiana_frango").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    disheprice = floatprice;
 
     OrderFinished();
 
@@ -118,7 +144,15 @@ function Select_bife_a_cavalo() {
     document.getElementById("box_bife_com_fritas").style.borderColor = "#FFFFFF";
     document.getElementById("check_bife_com_fritas").style.display = "none";
 
+    // todo Dishe chosen
     dishe = "Bife a Cavalo";
+
+    // todo Dish price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_bife_a_cavalo").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    disheprice = floatprice;
 
     OrderFinished();
 }
@@ -137,7 +171,15 @@ function Select_bife_com_fritas() {
     document.getElementById("box_bife_com_fritas").style.borderColor = "#32B72F";
     document.getElementById("check_bife_com_fritas").style.display = "block";
 
+    // todo Dishe chosen
     dishe = "Bife com Fritas";
+
+    // todo Dish price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_bife_com_fritas").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    disheprice = floatprice;
 
     OrderFinished();
 }
@@ -158,8 +200,10 @@ function Select_coca_cola_refri() {
     document.getElementById("box_fanta_refri").style.borderColor = "#FFFFFF";
     document.getElementById("check_fanta_refri").style.display = "none";
 
+    // todo Drink chosen
     drink = "Coca-Cola";
 
+    // todo Drink price calculation
     let stringprice;
     let floatprice;  
     stringprice = (document.getElementById("food-price_coca_cola_refri").textContent);
@@ -183,7 +227,15 @@ function Select_guarana_refri() {
     document.getElementById("box_fanta_refri").style.borderColor = "#FFFFFF";
     document.getElementById("check_fanta_refri").style.display = "none";
 
+    // todo Drink chosen    
     drink = "Guaraná";
+
+    // todo Drink price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_guarana_refri").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    drinkprice = floatprice;
 
     OrderFinished();
 }
@@ -202,7 +254,15 @@ function Select_guarana_jesus_refri() {
     document.getElementById("box_fanta_refri").style.borderColor = "#FFFFFF";
     document.getElementById("check_fanta_refri").style.display = "none";
 
+    // todo Drink chosen
     drink = "Guaraná Jesus";
+
+    // todo Drink price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_guarana_jesus_refri").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    drinkprice = floatprice;
 
     OrderFinished();
 }
@@ -221,7 +281,15 @@ function Select_pepsi_refri() {
     document.getElementById("box_fanta_refri").style.borderColor = "#FFFFFF";
     document.getElementById("check_fanta_refri").style.display = "none";
 
+    // todo Drink chosen
     drink = "Pepsi";
+
+    // todo Drink price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_pepsi_refri").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    drinkprice = floatprice;
 
     OrderFinished();
 
@@ -240,8 +308,16 @@ function Select_sprite_refri() {
     document.getElementById("check_sprite_refri").style.display = "block";
     document.getElementById("box_fanta_refri").style.borderColor = "#FFFFFF";
     document.getElementById("check_fanta_refri").style.display = "none";
-
+    
+    // todo Drink chosen
     drink = "Sprite";
+
+    // todo Drink price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_sprite_refri").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    drinkprice = floatprice;
 
     OrderFinished();
 }
@@ -260,7 +336,15 @@ function Select_fanta_refri() {
     document.getElementById("box_fanta_refri").style.borderColor = "#32B72F";
     document.getElementById("check_fanta_refri").style.display = "block";
 
+    // todo Drink chosen
     drink = "Fanta Laranja";
+
+    // todo Drink price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_fanta_refri").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    drinkprice = floatprice;
 
     OrderFinished();
 }
@@ -281,13 +365,15 @@ function Select_pudim() {
     document.getElementById("box_paçoca").style.borderColor = "#FFFFFF";
     document.getElementById("check_paçoca").style.display = "none";
 
+    // todo Dessert chosen
     dessert = "Pudim";
 
+    // todo Dessert price calculation
     let stringprice;
     let floatprice;  
     stringprice = (document.getElementById("food-price_pudim").textContent);
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
-    drinkprice = floatprice;
+    dessertprice = floatprice;
 
     OrderFinished();
 }
@@ -306,7 +392,15 @@ function Select_mousse_chocolate() {
     document.getElementById("box_paçoca").style.borderColor = "#FFFFFF";
     document.getElementById("check_paçoca").style.display = "none";
 
+    // todo Dessert chosen
     dessert = "Mousse de Chocolate";
+
+    // todo Dessert price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_mousse_chocolate").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    dessertprice = floatprice;
 
     OrderFinished();
 }
@@ -325,7 +419,15 @@ function Select_mousse_maracuja() {
     document.getElementById("box_paçoca").style.borderColor = "#FFFFFF";
     document.getElementById("check_paçoca").style.display = "none";
 
+    // todo Dessert chosen
     dessert = "Mousse de Maracuja";
+
+    // todo Dessert price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_mousse_chocolate").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    dessertprice = floatprice;
 
     OrderFinished();
 }
@@ -344,7 +446,15 @@ function Select_torta_holandesa() {
     document.getElementById("box_paçoca").style.borderColor = "#FFFFFF";
     document.getElementById("check_paçoca").style.display = "none";
 
+    // todo Dessert chosen
     dessert = "Torta Holandesa";
+
+    // todo Dessert price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_torta_holandesa").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    dessertprice = floatprice;
 
     OrderFinished();
 
@@ -364,7 +474,15 @@ function Select_torta_limao() {
     document.getElementById("box_paçoca").style.borderColor = "#FFFFFF";
     document.getElementById("check_paçoca").style.display = "none";
 
+    // todo Dessert chosen
     dessert = "Torta de Limão";
+
+    // todo Dessert price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_torta_limao").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    dessertprice = floatprice;
 
     OrderFinished();
 }
@@ -383,11 +501,26 @@ function Select_paçoca() {
     document.getElementById("box_paçoca").style.borderColor = "#32B72F";
     document.getElementById("check_paçoca").style.display = "block";
 
+    // todo Dessert chosen
     dessert = "Paçoca";
+
+    // todo Dessert price calculation
+    let stringprice;
+    let floatprice;  
+    stringprice = (document.getElementById("food-price_paçoca").textContent);
+    floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
+    dessertprice = floatprice;
 
     OrderFinished();
 }
 
-
-
 // * Button Finished
+
+function FinishOrder() {
+    let message;
+
+    message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+dishe+"\n- Bebida:" + " "+drink+"\n- Sobremesa:" + " "+dessert+ "\nTotal:" + " " + "R$" +" " + parseFloat(disheprice+disheprice+dessertprice).toFixed(2)
+    
+    window.open();
+    
+}
