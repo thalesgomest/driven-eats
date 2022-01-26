@@ -521,6 +521,6 @@ function FinishOrder() {
 
     message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+dishe+"\n- Bebida:" + " "+drink+"\n- Sobremesa:" + " "+dessert+ "\nTotal:" + " " + "R$" +" " + parseFloat(disheprice+disheprice+dessertprice).toFixed(2)
     
-    window.open();
+    window.open("https://wa.me/5535999160995?text="+encodeURI(message));
     
 }
