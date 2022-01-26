@@ -145,6 +145,11 @@ footer {
     height: 92px;
 }
 
+main .orders:last-child {
+    margin-bottom: 92px;
+}
+
+/* Before order finish */
 .order_button p {
     font-size: 20px;
     color: #FFFFFF;
@@ -164,6 +169,7 @@ footer {
     justify-content: center;
 }
 
+/* Button order finish */
 .order_button_finished p {
     font-size: 20px;
     color: #FFFFFF;
@@ -182,8 +188,4 @@ footer {
     align-items: center;
     justify-content: center;
     display: none;
-}
-
-main .orders:last-child {
-    margin-bottom: 92px;
 }

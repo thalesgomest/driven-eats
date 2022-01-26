@@ -17,7 +17,6 @@ function OrderFinished() {
     }
 }
 
-
 // * Functions select Dishes
 
 function Select_frango_yin_yang() {
@@ -514,7 +513,7 @@ function Select_paçoca() {
     OrderFinished();
 }
 
-// * Button Finished
+// * Button Finished Whatsapp Integration
 
 function FinishOrder() {
     let message;
