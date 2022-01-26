@@ -164,6 +164,26 @@ footer {
     justify-content: center;
 }
 
+.order_button_finished p {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-family: Roboto;
+}
+
+.order_button_finished {
+    background-color: #32B72F;
+    height: 61px;
+    width: 88%;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
 main .orders:last-child {
     margin-bottom: 92px;
 }
