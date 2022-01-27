@@ -42,7 +42,6 @@ header {
 /* Choices dishes, drinks and desserts */
 main {
     margin-top: 123px;
-    margin-left: 19px;
 }
 
 main p {
@@ -50,14 +49,18 @@ main p {
     color: #333333;
     font-weight: 400;
     font-family: Righteous;
+    margin-left: 19px;
 }
 
 .orders {
     display: flex;
     margin-top: 17px;
-    margin-left: 19px;
     margin-bottom: 27px;
     overflow-x: scroll;
+}
+
+.orders .box_order:first-child {
+    margin-left: 38px;
 }
 
 .box_order {
