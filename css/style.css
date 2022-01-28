@@ -18,6 +18,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .brand_slogan {
@@ -60,7 +61,7 @@ main p {
 }
 
 .orders .box_order:first-child {
-    margin-left: 38px;
+    margin-left: 19px;
 }
 
 .box_order {
@@ -111,7 +112,6 @@ main p {
 
 .order_price {
     display: flex;
-    /* flex-direction: column; */
     justify-content: space-between;
 }
 
@@ -152,7 +152,7 @@ main .orders:last-child {
     margin-bottom: 92px;
 }
 
-/* Before order finish */
+/* Button Before order finish - Chose 3 itens */
 .order_button p {
     font-size: 20px;
     color: #FFFFFF;
@@ -185,10 +185,102 @@ main .orders:last-child {
     height: 61px;
     width: 88%;
     border-radius: 50px;
-    position: absolute;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     display: none;
+}
+
+/* * confirmation screen */
+
+.confirmation_screen {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.background_order_summary {
+    background-color: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    height: 353px;
+    width: 377px;
+}
+
+.background_order_summary h1 {
+    font-family: Roboto;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.order_informations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+    margin-left: 26px;
+    margin-right: 25px;
+}
+
+.order_informations p {
+    font-family: Roboto;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.order_informations p:nth-child(4) {
+    font-family: Roboto;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.prices_order {
+    text-align: right;
+}
+
+.confirmation_button {
+    margin-left: 24px;
+    margin-top: 11px;
+    background-color: #FFFFFF;
+    height: 52px;
+    width: 333px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation_button p {
+    font-size: 22px;
+    font-family: Roboto;
+    color: #50D074;
+    font-weight: 700;
+}
+
+.cancel_order {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.cancel_order p {
+    font-size: 20px;
+    font-family: Roboto;
+    color: #FFFFFF;
+    font-weight: 700;
 }

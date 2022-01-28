@@ -15,7 +15,33 @@
 </head>
 
 <body>
-    <!-- *Top bar fixed -->
+    <!-- ! Confirmation Screen and order summary -->
+    <div class="confirmation_screen" id="confirmation_screen">
+        <div class="background_order_summary">
+            <h1>Confirme seu pedido</h1>
+            <div class="order_informations" id="order_informations">
+                <div>
+                    <p id="dishe_order"></p>
+                    <p id="drink_order"></p>
+                    <p id="dessert_order"></p>
+                    <p>TOTAL</p>
+                </div>
+                <div class="prices_order">
+                    <p id="dishe_order_price"></p>
+                    <p id="drink_order_price"></p>
+                    <p id="dessert_order_price"></p>
+                    <p id="total_order_price"></p>
+                </div>
+            </div>
+            <div class="confirmation_button" id="confirmation_button" onclick="finishOrder()">
+                <p>Tudo certo, pode pedir!</p>
+            </div>
+            <div class="cancel_order">
+                <p id="cancel_order" onclick="cancelOrder()">Cancelar</p>
+            </div>
+        </div>
+    </div>
+    <!-- ! Top bar fixed -->
     <header>
         <div class="brand_slogan">
             <h1>DrivenEats</h1>
@@ -33,8 +59,10 @@
                 <div class="order">
                     <img src="imgs/dishes/frango_yin_yang.png" alt="frango_yin_yang" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Frango Yin Yang</p>
-                        <p class="orders__box_order__order__description">Um pouco de batata, um pouco de salada</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Frango Yin Yang
+                        </p>
+                        <p class="orders__box_order__order__description">Um pouco de batata, um pouco de salada
+                        </p>
                     </div>
                 </div>
                 <div class="order_price">
@@ -47,7 +75,8 @@
                 <div class="order">
                     <img src="imgs/dishes/lasanha_bolonhesa.jpg" alt="lasanha_bolonhesa" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Lasanha Bolonhesa</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Lasanha Bolonhesa
+                        </p>
                         <p class="orders__box_order__order__description">Acompanha arroz e salada</p>
                     </div>
                 </div>
@@ -61,7 +90,9 @@
                 <div class="order">
                     <img src="imgs/dishes/parmegiana_carne.jpg" alt="parmegiana_carne" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Parmegiana de Carne</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Parmegiana de
+                            Carne
+                        </p>
                         <p class="orders__box_order__order__description">Acompanha arroz</p>
                     </div>
                 </div>
@@ -75,7 +106,9 @@
                 <div class="order">
                     <img src="imgs/dishes/parmegiana_frango.jpg" alt="parmegiana_frango" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Parmegiana de Frango</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Parmegiana de
+                            Frango
+                        </p>
                         <p class="orders__box_order__order__description">Acomp. arroz e fritas</p>
                     </div>
                 </div>
@@ -94,7 +127,7 @@
                     </div>
                 </div>
                 <div class="order_price">
-                    <p data-identifier="food-price" id="food-price_bifa_a_cavalo">R$ 14,90</p>
+                    <p data-identifier="food-price" id="food-price_bife_a_cavalo">R$ 14,90</p>
                     <ion-icon id="check_bife_a_cavalo" name="checkmark-circle"></ion-icon>
                 </div>
             </div>
@@ -103,7 +136,8 @@
                 <div class="order">
                     <img src="imgs/dishes/bife_com_fritas.jpg" alt="bife_com_fritas" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Bife com Fritas</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Bife com Fritas
+                        </p>
                         <p class="orders__box_order__order__description">Acompanha arroz e salada </p>
                     </div>
                 </div>
@@ -135,7 +169,8 @@
                 <div class="order">
                     <img src="imgs/drinks/guarana_refri.jpg" alt="guarana_refri" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Guaraná Antartica</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Guaraná Antartica
+                        </p>
                         <p class="orders__box_order__order__description">Lata 350ml</p>
                     </div>
                 </div>
@@ -219,7 +254,8 @@
                 <div class="order">
                     <img src="imgs/desserts/mousse_chocolate.jpg" alt="mousse_chocolate" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Mousse Chocolate</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Mousse Chocolate
+                        </p>
                         <p class="orders__box_order__order__description">Pote pequeno</p>
                     </div>
                 </div>
@@ -233,7 +269,8 @@
                 <div class="order">
                     <img src="imgs/desserts/mousse_maracuja.jpg" alt="mousse_maracuja" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Mousse Maracujá</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Mousse Maracujá
+                        </p>
                         <p class="orders__box_order__order__description">Pote pequeno</p>
                     </div>
                 </div>
@@ -247,7 +284,8 @@
                 <div class="order">
                     <img src="imgs/desserts/torta_holandesa.jpg" alt="torta_holandesa" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Torta Holandesa</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Torta Holandesa
+                        </p>
                         <p class="orders__box_order__order__description">Pedaço</p>
                     </div>
                 </div>
@@ -260,7 +298,8 @@
                 <div class="order">
                     <img src="imgs/desserts/torta_limao.jpg" alt="torta_limao" />
                     <div class="orders__box_order__order__txt">
-                        <p class="orders__box_order__order__name" data-identifier="food-title">Torta de Limão</p>
+                        <p class="orders__box_order__order__name" data-identifier="food-title">Torta de Limão
+                        </p>
                         <p class="orders__box_order__order__description">Pedaço</p>
                     </div>
                 </div>
@@ -285,13 +324,13 @@
         </div>
     </main>
 
-    <!-- * Bottom bar fixed and Whatsapp Integration-->
+    <!-- * Bottom bar - Botton Close Order -->
     <footer>
         <div class="order_button" id="order_button">
             <p>Selecione os 3 itens</p>
             <p>para fechar o pedido</p>
         </div>
-        <div class="order_button_finished" id="order_button_finished" onclick="FinishOrder()">
+        <div class="order_button_finished" id="order_button_finished" onclick="closeOrder()">
             <p>Fechar pedido</p>
         </div>
     </footer>

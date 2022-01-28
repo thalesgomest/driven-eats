@@ -9,7 +9,7 @@ let dessertprice;
 
 // * Function change for Finish Button
 
-function OrderFinished() {
+function orderFinished() {
     if ((dishe != 0)&&(drink != 0)&&(dessert != 0)) {
         document.getElementById("order_button").style.display = "none";
         document.getElementById("order_button_finished").style.display = "block";
@@ -43,7 +43,7 @@ function Select_frango_yin_yang() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     disheprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 
 }
 
@@ -71,7 +71,7 @@ function Select_lasanha_bolonhesa() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     disheprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_parmegiana_carne() {
@@ -98,7 +98,7 @@ function Select_parmegiana_carne() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     disheprice = floatprice;
 
-    OrderFinished();    
+    orderFinished();    
 }
 
 function Select_parmegiana_frango() {
@@ -125,7 +125,7 @@ function Select_parmegiana_frango() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     disheprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 
 }
 
@@ -153,7 +153,7 @@ function Select_bife_a_cavalo() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     disheprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_bife_com_fritas() {
@@ -180,7 +180,7 @@ function Select_bife_com_fritas() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     disheprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 // * Functions select Drinks
@@ -209,7 +209,7 @@ function Select_coca_cola_refri() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     drinkprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_guarana_refri() {
@@ -236,7 +236,7 @@ function Select_guarana_refri() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     drinkprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_guarana_jesus_refri() {
@@ -263,7 +263,7 @@ function Select_guarana_jesus_refri() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     drinkprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_pepsi_refri() {
@@ -290,7 +290,7 @@ function Select_pepsi_refri() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     drinkprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 
 }
 
@@ -318,7 +318,7 @@ function Select_sprite_refri() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     drinkprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_fanta_refri() {
@@ -345,7 +345,7 @@ function Select_fanta_refri() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     drinkprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 // * Functions select Desserts
@@ -374,7 +374,7 @@ function Select_pudim() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     dessertprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_mousse_chocolate() {
@@ -401,7 +401,7 @@ function Select_mousse_chocolate() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     dessertprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_mousse_maracuja() {
@@ -428,7 +428,7 @@ function Select_mousse_maracuja() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     dessertprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_torta_holandesa() {
@@ -455,7 +455,7 @@ function Select_torta_holandesa() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     dessertprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 
 }
 
@@ -483,7 +483,7 @@ function Select_torta_limao() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     dessertprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
 function Select_paçoca() {
@@ -510,15 +510,37 @@ function Select_paçoca() {
     floatprice = parseFloat(stringprice.replace('R$', '').replace('.','').replace(',', '.'));
     dessertprice = floatprice;
 
-    OrderFinished();
+    orderFinished();
 }
 
-// * Button Finished Whatsapp Integration
+// * Button Close Order
 
-function FinishOrder() {
+function closeOrder() {
+    document.getElementById("confirmation_screen").style.display = "block";
+    document.getElementById("confirmation_screen").style.display = "flex";
+    document.getElementById("dishe_order").innerHTML = dishe
+    document.getElementById("drink_order").innerHTML = drink;
+    document.getElementById("dessert_order").innerHTML = dessert;
+    document.getElementById("dishe_order_price").innerHTML = "R$ "+ disheprice.toFixed(2).toString().replace(".",",");
+    document.getElementById("drink_order_price").innerHTML = "R$ "+ drinkprice.toFixed(2).toString().replace(".",",");;
+    document.getElementById("dessert_order_price").innerHTML = "R$ "+ dessertprice.toFixed(2).toString().replace(".",",");
+    document.getElementById("total_order_price").innerHTML = "R$ "+ parseFloat(disheprice+drinkprice+dessertprice).toFixed(2).toString().replace(".",",");
+}
+
+// * Button Cancel Order
+function cancelOrder() {
+    document.getElementById("confirmation_screen").style.display = "none";
+}
+
+// * Button Finished - Whatsapp Integration
+
+function finishOrder() {
+
+    let name = prompt("Informe o seu nome: ");
+    let adress = prompt("Informe o endereço de entrega: ")
     let message;
 
-    message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+dishe+"\n- Bebida:" + " "+drink+"\n- Sobremesa:" + " "+dessert+ "\nTotal:" + " " + "R$" +" " + parseFloat(disheprice+drinkprice+dessertprice).toFixed(2)
+    message ="Olá, gostaria de fazer o pedido:\n- Prato:"+" "+dishe+"\n- Bebida:" + " "+drink+"\n- Sobremesa:" + " "+dessert+ "\nTotal:" + " " + "R$" +" " + parseFloat(disheprice+drinkprice+dessertprice).toFixed(2)+"\nNome: "+name+"\nEndereço: "+adress;
     
     window.open("https://wa.me/5535999160995?text="+encodeURI(message));
     
