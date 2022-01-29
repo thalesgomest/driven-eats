@@ -518,12 +518,12 @@ function Select_paçoca() {
 function closeOrder() {
     document.getElementById("confirmation_screen").style.display = "block";
     document.getElementById("confirmation_screen").style.display = "flex";
-    document.getElementById("dishe_order").innerHTML = dishe
+    document.getElementById("dishe_order").innerHTML = dishe;
     document.getElementById("drink_order").innerHTML = drink;
     document.getElementById("dessert_order").innerHTML = dessert;
-    document.getElementById("dishe_order_price").innerHTML = "R$ "+ disheprice.toFixed(2).toString().replace(".",",");
-    document.getElementById("drink_order_price").innerHTML = "R$ "+ drinkprice.toFixed(2).toString().replace(".",",");;
-    document.getElementById("dessert_order_price").innerHTML = "R$ "+ dessertprice.toFixed(2).toString().replace(".",",");
+    document.getElementById("dishe_order_price").innerHTML = disheprice.toFixed(2).toString().replace(".",",");
+    document.getElementById("drink_order_price").innerHTML = drinkprice.toFixed(2).toString().replace(".",",");;
+    document.getElementById("dessert_order_price").innerHTML = dessertprice.toFixed(2).toString().replace(".",",");
     document.getElementById("total_order_price").innerHTML = "R$ "+ parseFloat(disheprice+drinkprice+dessertprice).toFixed(2).toString().replace(".",",");
 }
 

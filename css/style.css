@@ -204,7 +204,7 @@ main .orders:last-child {
     display: none;
 }
 
-/* * confirmation screen */
+/*  confirmation screen */
 
 .confirmation_screen {
     background-color: rgba(255, 255, 255, 0.9);
