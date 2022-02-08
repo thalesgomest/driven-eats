@@ -32,7 +32,7 @@
     - [x] **For each requirement implemented** make a *commit* with a descriptive message of what you have evolved.
 
 * **LAYOUT**
-  - [x] Apply layout for mobile, following images provided (no need to implement a layout for desktop)
+  - [x] Apply layout for mobile
   - [x] Top and close order button must have fixed placement and not scroll with scrollbar
   - [x] You can use random images and text to illustrate the page, but vary the price for each item in the same category
   - [x] The fonts used are: [Righteous](https://fonts.google.com/specimen/Righteous) (restaurant name and category titles) and [Roboto](https://fonts.google.com/specimen/Roboto) (other texts)
