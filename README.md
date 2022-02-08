@@ -45,18 +45,18 @@
   - [x] When clicking on an item already marked, it is **not** necessary to unmark it 
 
 - **END ORDER BUTTON**
- - [x] By default, the checkout button should be disabled. When clicking the button in this state, nothing should happen.
- - [x] When the user has selected the items from the 3 categories, the button must change to the enabled state, following screen layout 
+  - [x] By default, the checkout button should be disabled. When clicking the button in this state, nothing should happen.
+  - [x] When the user has selected the items from the 3 categories, the button must change to the enabled state, following screen layout 
 
 - **ORDER SUBMISSION**
- - [x] Upon finalizing the order, the user must be forwarded to **WhatsApp Web**, in conversation with the restaurant's contact, with a standard message already filled in 
+  - [x] Upon finalizing the order, the user must be forwarded to **WhatsApp Web**, in conversation with the restaurant's contact, with a standard message already filled in 
 
 - **BONUS**
 
-   - [x] Ask for name and address
-    - When clicking on checkout, issue two `prompt` to the user asking for their name and address. This information must then be added to the final message that is sent by WhatsApp
-   - [x] Confirm the data before finalizing the order
-    - When clicking "Checkout" instead of going to WhatsApp direct, first review the purchase by a Bonus screen 
+  - [x] Ask for name and address
+   - When clicking on checkout, issue two `prompt` to the user asking for their name and address. This information must then be added to the final message that is sent by WhatsApp
+  - [x] Confirm the data before finalizing the order
+   - When clicking "Checkout" instead of going to WhatsApp direct, first review the purchase by a Bonus screen 
 
 ### Author
 ---
