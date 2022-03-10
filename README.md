@@ -47,7 +47,7 @@
   - [x] To make products scroll horizontally, use `overflow-x: scroll`. In desktop mode a scroll is displayed, but in mobile mode not. 
 
 * **ITEM SELECTION**
-  - [x] When clicking on an item, it must be marked as selected, following screen layout 3
+  - [x] When clicking on an item, it must be marked as selected
   - [x] When clicking on an item, if there is already an item selected in the same category, it must be deselected and the new item clicked must be the new selected item
   - [x] When clicking on an item already marked, it is **not** necessary to unmark it 
 
