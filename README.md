@@ -24,6 +24,13 @@
 ### Status
 ![status-finished](https://user-images.githubusercontent.com/97575616/152926720-d042178b-24c0-4d6b-94fb-0ccbd3c082cc.svg)
 
+### Mobile Site
+<div align="center">
+  <img width="500px" src="https://user-images.githubusercontent.com/97575616/157726794-8e44aa1c-fd7a-4d68-98f7-a9b78df41003.gif" alt="site-mobile">
+</div>
+
+
+  
 ## Requirements
 
 * **GENERAL**
