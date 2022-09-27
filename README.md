@@ -9,14 +9,6 @@
 -   [Build with](#%EF%B8%8F-build-with)
 -   [Contact](#-contact)
 
-## Table of contents
-
--   [Project Description](#project-description)
--   [Status of work](#🚧-status-of-work)
--   [Mobile](#📸-mockup)
--   [Requirements](#✅-requirements)
--   [Contact](#📫-contact)
-
 ## 📌 Project Description
 
 <p align="justify">My first project using JavaScript was the implementation of the mobile site called DrivenEats. The website allows you to easily choose your combo, as well as input the <code>name</code> and <code>adress</code> information, then send a standardized message with the summary of the order and all the data via WhatsApp directly to the restaurant.</p>
