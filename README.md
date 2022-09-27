@@ -33,7 +33,7 @@
 -   [x] Order summary for user confirmation
 -   [x] CSS classes dinamically inserted via JS to give a visual feedback to the user
 
-## 🔧 Requirements
+## 📍 Requirements
 
 -   **GENERAL**
 
