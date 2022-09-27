@@ -5,7 +5,8 @@
 -   [Project Description](#-project-description)
 -   [Mockup](#-mockup)
 -   [Status of work](#-status-of-work)
--   [How to run](#%EF%B8%8F-how-to-run)
+-   [Features](#-features)
+-   [Requirements](#-requirements)
 -   [Build with](#%EF%B8%8F-build-with)
 -   [Contact](#-contact)
 
@@ -25,7 +26,14 @@
   <img src="https://user-images.githubusercontent.com/97575616/157726794-8e44aa1c-fd7a-4d68-98f7-a9b78df41003.gif" alt="mockup-mobile">
 </div>
 
-## ✅ Requirements
+## ✅ Features
+
+-   [x] Choose 1 item of each category for making the order
+-   [x] After choosing the items for all the categories, the user can finish the order
+-   [x] Order summary for user confirmation
+-   [x] CSS classes dinamically inserted via JS to give a visual feedback to the user
+
+## 🔧 Requirements
 
 -   **GENERAL**
 
